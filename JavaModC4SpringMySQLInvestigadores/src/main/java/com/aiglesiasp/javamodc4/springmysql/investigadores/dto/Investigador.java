@@ -25,13 +25,13 @@ import jakarta.persistence.Table;
 @Entity
 @Table(name = "investigadores")
 public class Investigador {
-	// Atributos de entidad departamento
+	
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private int id;
 	@Column(name = "dni")
 	private String dni;
-	@Column(name = "nomApels")
+	@Column(name = "nom_apels")
 	private String nomApels;
 
 	@OneToMany
